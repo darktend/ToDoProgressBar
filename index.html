@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:wght@100&display=swap"
+    rel="stylesheet">
   <title>ToDoWithProgressBar</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -15,16 +19,43 @@
     <div class="todo">
       <div class="head_todo">
         <p>ToDo with a progress bar</p>
+
         <div class="progress__todo">
           <progress id="file" max="100" value="70">70%</progress>
         </div>
+        <div class="read_add">
+          <input type="text" placeholder="What needs to be done?">
+          <button class="read_addd-btn">add</button>
+        </div>
         <div class="item">
           <label>
-            <input type="checkbox" value="test2" name="test" />
+            <input type="checkbox" value="test2" name="test" class="item_input" />
+            <span class="checkbox"></span>
+            <p class="add_tasks">Text checklist</p>
+          </label>
+          <label>
+            <input type="checkbox" value="test2" name="test" class="item_input" />
             <span class="checkbox"></span>
             <p class="add_tasks">Text checklist</p>
           </label>
 
+        </div>
+        <div class="item_footer">
+          <div class="item_left">
+            <p>1 item left</p>
+          </div>
+          <div class="all_item">
+            <p>All</p>
+          </div>
+          <div class="active_item">
+            <p>Active</p>
+          </div>
+          <div class="completed_item">
+            <p>Completed</p>
+          </div>
+          <div class="clear_item">
+            <p>Clear completed</p>
+          </div>
         </div>
       </div>
     </div>
